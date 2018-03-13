@@ -3,11 +3,13 @@
   //it('returns a distance in blocks', function() {
     //expect(distanceFromHqInBlocks(43)).to.equal(1);
   //})
-  function distanceFromHqInBlocks(43){
-
+  function distanceFromHqInBlocks(x){
+    distance=(x-42)
+    if (distance <0) {distance = 42-x}
+    return distance
   }
-  function distanceFromHqInFeet () {
-  distanceFromHqInBlocks();
+  function distanceFromHqInFeet (x) {
+    return distanceFromHqInBlocks(x)*264
 
 }
 function calculateVertical() {
